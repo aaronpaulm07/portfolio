@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import About from '../components/about'
 import Contact from '../components/contact'
+import "../fonts/Poppins-Regular.ttf"
 const Home = () => {
   return (
     <div className='root'>
