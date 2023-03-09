@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import About from '../components/about'
 import Contact from '../components/contact'
+import Name from '../components/name'
 import "../fonts/Poppins-Regular.ttf"
 const Home = () => {
   return (
@@ -9,11 +10,12 @@ const Home = () => {
       <div>
         <div>
           <div>
-            <div className='rect1' >
-            <Header/>
+            <div>
+              <Header/>
             </div>
-            <h1 className='fname'>AARON</h1>
-            <h1 className='lname'>PAUL</h1>
+            <div>
+              <Name/>
+            </div>
           </div>
           <div>
             <About/>
