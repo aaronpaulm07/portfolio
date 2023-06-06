@@ -1,9 +1,11 @@
 import React from 'react'
-
+import About from '../components/about';
+import { Element } from 'react-scroll';
 
 const about = () => {
   return (
     <div className='root'>
+       <Element name="abouttt" className='root'>
         <div className='abt' id='abt'>
             <h1 className='aboutH'>ABOUT</h1>
             <h2 className='name'>AARON PAUL</h2>
@@ -13,10 +15,11 @@ const about = () => {
              insights and decision-making while also focusing on creating intuitive and visually appealing interfaces.
              With a thirst for knowledge and a drive to excel, I am excited to contribute my skills and make a meaningful
              impact in the industry.
-             <br/>
+             <br/><br/>
              I'm always happy to connect with new people to share my experiences and also learn from them.
              </p1>
           </div>
+          </Element>
     </div>
   )
 }

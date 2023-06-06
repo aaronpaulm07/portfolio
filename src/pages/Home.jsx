@@ -1,4 +1,5 @@
 import React from 'react'
+import { Element } from 'react-scroll';
 import Header from '../components/Header'
 import About from '../components/about'
 import Contact from '../components/contact'
@@ -17,9 +18,11 @@ const Home = () => {
               <Name/>
             </div>
           </div>
-          <div>
-            <About/>
-          </div>
+          <Element name="about">
+            <div>
+              <About/>
+            </div>
+          </Element>  
           <div>
             <Contact/>
           </div>
