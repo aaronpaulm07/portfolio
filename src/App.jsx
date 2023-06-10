@@ -1,26 +1,20 @@
-import { useState } from 'react'
-import Header from './components/Header'
-import { Link } from 'react-scroll'
+import React from 'react';
+import { Link } from 'react-scroll';
+import Header from './components/Header';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import './App.css';
 
-import './App.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-
-function App() {
+const App = () => {
   return (
-    <>
-    <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/about' element={<abouttt/>} />
-          <Route path='/contact' element={<Home/>} />
-
-        </Routes>
-      </BrowserRouter>
+    <div className='app'>
+      <Header />
+      <Home />
+      <About />
+      <Contact />
     </div>
-    </>
-  )
+  );
 }
 
-export default App
+export default App;

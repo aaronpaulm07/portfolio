@@ -70,6 +70,9 @@ align-items: center;
 color: #000000;
 margin: 0px;
 }
+.menu{
+  display: none;
+}
 .na{
   position: absolute;
   top: 0%;
@@ -98,7 +101,12 @@ font-size: 8.2rem;
 mix-blend-mode: normal;
 /*transform: matrix(1, 0, 0, -1, 0, 0);*/
 }
-
+.roles{
+  position: absolute;  
+  top: 17vh ;
+  transform: scale(0.7);
+  left: 57vw;
+}
 .abt{
   top: 125dvh;
   left: 50dvw;
@@ -119,11 +127,16 @@ font-size: 45px;
 color: #404040;
 mix-blend-mode: normal;
 }
+.selff{
+  position: relative;
+  top: -60vh;
+  left: -38vw;
+}
 .aboutH
 {
 position: relative;
 height: auto;
-margin: 0%;
+margin: 0px;
 top: 10px;
 font-family: 'Breul Grotesk A', sans-serif ;
 font-style: normal;
@@ -141,10 +154,12 @@ width: auto;
 display: inline-flex;
 height: auto;
 margin-right: 30px;
+line-height: 1.3;
 top: 30px;
+text-align: justify;
 font-family: 'Breul Grotesk A', sans-serif ;
-font-style: normal;
-font-weight: 700;
+font-style:300;
+max-width: 650px;
 font-size: 20px;
 color: #707070;
 
@@ -164,7 +179,7 @@ width: 700px;
 height: auto;
 left: 15%;
 top: 55px;
-margin: 0cm;
+margin: 0px;
 font-family: 'Breul Grotesk A', sans-serif ;
 font-style: normal;
 font-weight: 700;
@@ -192,21 +207,28 @@ transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .para2{
   position: relative;
-  width: 450px;
-  height: 404px;
+  width: fit-content;
+  height: fit-content;
   left: 17%;
   top: 50px;
   font-family: 'Breul Grotesk A', sans-serif ;
-  font-style: normal;
-  font-weight: 700;
+  font-style: 300;
   font-size: 20px;
+  
   color: #707070;
+  }
+  .address{
+    position: relative;
+    top: 75px;
+    left: 17%;
+    margin: 20px;
+    width: fit-content;
   }
 .email{
   position: relative;
   width: auto;
-  left: 28%;
-  top: 120px;
+  left: 10px;
+  top: 0;
   font-family: 'Breul Grotesk A', sans-serif ;
   font-style: normal;
   font-weight: 700;
@@ -214,9 +236,20 @@ transform: matrix(1, 0, 0, 1, 0, 0);
   color: #707070;
   text-decoration: none;
   }
+  .mail{
+    top: 2px;;
+    position:relative ;
+    left: 0px;
+    width: 20px;
+  }
+  .linked{
+    top: 2px;;
+    position:relative ;
+    left: 0px;
+  }
  .linkedin{
-  top: 172px;
-  left: 28%;
+  top: 0px;
+  left: 10px;
   text-decoration: none;
   position: relative;
   width: auto;
@@ -237,28 +270,22 @@ li {
 .self{
   display: none;
 }
-.mail{
-  top: 122px;;
-  position:relative ;
-  left: 25%;
-  width: 20px;
-}
-.linked{
-  top: 175px;;
-  position:relative ;
-  left: 25%;
-}
+
 .end
   { width: 100dvw;
-    position: absolute;
+    position: relative;
     height: 40px;
-    top: 300dvh;
+    top: 30vh;
     left: 0px;
     right: 0%;
     background: #9d9d9d;
     mix-blend-mode: normal;
   }
- 
+  @media only screen and (min-width: 500px) and (max-width: 1000px){
+    .roles{
+      display: none;
+    }
+  }
 @media only screen and (max-width: 500px) {
   .fname
   {
@@ -294,6 +321,23 @@ li {
     display: block;
     font-size: 20px;
   }
+  .self{
+    margin: 0%;
+    position: absolute;
+    left: 46.5dvw;
+    top: 33dvh;
+    display: block;
+  }
+  .menu{
+    display:grid;
+  }
+  .roles{
+    position: relative;  
+    top:72vh ;
+    transform: scale(0.5);
+    left: -69px;
+    margin: 20px;
+  }
   .rect1
   {
     display : none;
@@ -308,16 +352,21 @@ li {
      overflow-x: hidden;
   }
   .abt{
-    top: 110dvh;
+    top: 145vh;
     left: 0dvw; 
     width: 100dvw;
     position: absolute;
+  }
+  .selff{
+    display: none;
+    position: absolute;
+    left: -400px;
   }
   .name{
     width: 165px;
     height: 38px;
     left: 30dvw;
-    top: -40px;
+    top: -46px;
     position: relative;
     font-weight: 700;
     font-size: 25px;
@@ -328,6 +377,7 @@ li {
       position: relative;
       width: fit-content;
       height: auto;
+      margin-right: 0%;
       left: 45px;
       top: 20px;
       font-size: 105px;
@@ -350,9 +400,9 @@ li {
     }
     .connn{
     position: absolute;
-    top: 200dvh;
+    top: 225dvh;
     width: 100dvw;
-    height: 50dvh;
+    height: 50vh; 
     display: block;
     }
     .conH{
@@ -360,6 +410,7 @@ li {
       height: auto;
       left: 43px;
       top: 20px;
+      margin-right: 0px;
       font-size: 70px;
       color: #f2f2f2;
     }
@@ -368,6 +419,7 @@ li {
       height: auto;
       left: 85px;
       top: -20px;
+      margin: 0%;
       font-size: 30px;
     }
     .para2{
@@ -381,44 +433,48 @@ li {
       left: 50px;
       top: 10px;
       }
+      .address{
+        top: 60px;
+        margin: 15px;
+      }
       .email{
-        width: 200px;
-        height: 20px;
-        left: 120px;
-        top:50px;
+        width: auto;
+        height: auto;
+        left: 10px;
+        top:0px;
+        font-family: 'Breul Grotesk A', sans-serif ;
+        font-style: light;
+        font-weight: 700;
         font-size: 15px;
-      }
-      .linkedin{
-        width: 200px;
-        height: 20px;
-        left: 120px;
-        top: 86px;
-        font-size: 15px;
-        margin-bottom:30px ;
-      }
-      .end{
-        width: 100dvw;
-        top:250dvh;
-        height: 30px;
-        background: #1c1c1c;
-      }
-      
-      .self{
-        margin: 0%;
-        position: absolute;
-        left: 46.5dvw;
-        top: 33dvh;
-        display: block;
       }
       .mail{
-        top:55px;
-        left: 100px;
+        top: 3px;
+        left: 0px;
         width: 20px;
       }
       .linked{
-        top: 90px;
-        left: 100px;
+        top: 3px;
+        left: 0px;
       }
+      .linkedin{
+        width: auto;
+        height: auto;
+        left: 10px;
+        top: 0px;
+        font-size: 15px;
+        }
+
+      .end{
+        width: 100dvw;
+        bottom: 0px;
+        top:auto;
+        height: 30px;
+        background: #1c1c1c;
+      }
+    
+      
+     
+      
       .title{
         display: none;
       }
