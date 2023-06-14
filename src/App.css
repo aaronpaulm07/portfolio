@@ -9,10 +9,10 @@
 body {
   background-color: #ffffff;
   margin: 0px;
-  height: 100dvh;
-  width: 100dvw; 
+  height: 100vh;
+  width: 100vw; 
   overflow-x: hidden;
-}
+  }
 
 .root {
   width:100dvw;
@@ -282,11 +282,13 @@ li {
     mix-blend-mode: normal;
   }
   @media only screen and (min-width: 500px) and (max-width: 1000px){
+    
     .roles{
       display: none;
     }
   }
 @media only screen and (max-width: 500px) {
+  
   .fname
   {
   font-size: 11rem; 
@@ -335,7 +337,7 @@ li {
     position: relative;  
     top:72vh ;
     transform: scale(0.5);
-    left: -69px;
+    left: -65px;
     margin: 20px;
   }
   .rect1
@@ -370,6 +372,7 @@ li {
     position: relative;
     font-weight: 700;
     font-size: 25px;
+    
     color: #4A4A4A;
     mix-blend-mode: normal;
     }
@@ -387,7 +390,7 @@ li {
     }
     .para{
       width: 300px;
-      left: 28px;
+      left: 40px;
       top: -50px;
       margin: 20px;
       font-family: 'Breul Grotesk A', sans-serif ;
@@ -402,7 +405,7 @@ li {
     position: absolute;
     top: 225dvh;
     width: 100dvw;
-    height: 50vh; 
+    height: 40vh; 
     display: block;
     }
     .conH{
@@ -466,8 +469,7 @@ li {
 
       .end{
         width: 100dvw;
-        bottom: 0px;
-        top:auto;
+        top: 25vh;
         height: 30px;
         background: #1c1c1c;
       }
