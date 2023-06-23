@@ -20,7 +20,7 @@ body {
 .rect1
 {
   height: 100vh;
-  width:54dvw;
+  width:54vw;
   margin-left:46vw;
   background: #ECECEC;
   mix-blend-mode: normal;
@@ -261,9 +261,7 @@ transform: matrix(1, 0, 0, 1, 0, 0);
   color: #707070;
   display: unset;
   }
-li {
-  list-style: none;
-}
+
 .im{
   display: none;
 }
@@ -350,7 +348,7 @@ li {
   .contact{
     display : none;
   }
-  body {
+  .body {
      overflow-x: hidden;
   }
   .abt{
@@ -403,13 +401,13 @@ li {
     }
     .connn{
     position: absolute;
-    top: 225dvh;
-    width: 100dvw;
+    top: 225vh;
+    width: 100vw;
     height: 40vh; 
     display: block;
     }
     .conH{
-      width: auto;
+      width: fit-content;
       height: auto;
       left: 43px;
       top: 20px;
@@ -439,6 +437,7 @@ li {
       .address{
         top: 60px;
         margin: 15px;
+        margin-right: 0px;
       }
       .email{
         width: auto;
@@ -473,11 +472,7 @@ li {
         height: 30px;
         background: #1c1c1c;
       }
-    
-      
-     
-      
-      .title{
+       .title{
         display: none;
       }
     }
