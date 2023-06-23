@@ -482,3 +482,7 @@ li {
       }
     }
   
+
+html {
+  scroll-behavior: smooth;
+}
