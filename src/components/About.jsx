@@ -6,6 +6,7 @@ const About = () => {
   return (
     <div name="aaron_about" >
       <div className="abt" id="ron_about">
+      <div id="aaron_about" style={{backgroundColor: "#00000", height: "1px" }} />
         <h1 className="aboutH" id="aaron_about">ABOUT</h1>
         <h2 className="name">AARON PAUL</h2>
         <p className="para">
