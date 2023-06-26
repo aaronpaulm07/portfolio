@@ -108,17 +108,34 @@ mix-blend-mode: normal;
   left: 57vw;
 }
 .abt{
-  top: 125dvh;
+  top: 120dvh;
   left: 50dvw;
-  width: auto;
+  width: fit-content;
+  height: 550px;
   position: absolute;
+}
+.aboutH
+{
+position: relative;
+height: auto;
+margin: 0px;
+top: 100px;
+font-family: 'Breul Grotesk A', sans-serif ;
+font-style: normal;
+font-weight: 700;
+font-size: 130px;
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke: 2px;
+/* identical to box height */
+color:#E8E8E8;
+transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .name
 {
-position: absolute;
+position: relative;
 width: 554px;
 height: 35px;
-top: 50px;
+top: -5px;
 font-family: 'Breul Grotesk A', sans-serif ;
 font-style: normal;
 font-weight: 700;
@@ -132,22 +149,7 @@ mix-blend-mode: normal;
   top: -60vh;
   left: -38vw;
 }
-.aboutH
-{
-position: relative;
-height: auto;
-margin: 0px;
-top: 10px;
-font-family: 'Breul Grotesk A', sans-serif ;
-font-style: normal;
-font-weight: 700;
-font-size: 130px;
--webkit-text-fill-color: transparent;
--webkit-text-stroke: 2px;
-/* identical to box height */
-color:#E8E8E8;
-transform: matrix(1, 0, 0, 1, 0, 0);
-}
+
 .para{
 position: relative;
 width: auto;
@@ -155,7 +157,7 @@ display: inline-flex;
 height: auto;
 margin-right: 30px;
 line-height: 1.3;
-top: 30px;
+top: 0px;
 text-align: justify;
 font-family: 'Breul Grotesk A', sans-serif ;
 font-style:300;
